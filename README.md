@@ -3,8 +3,8 @@
 Circle images with differential evolutionary algorithm from scratch.<br>
 
 <div align="center">
-    <img width="80%" src="https://github.com/ASASauqui/Color-calibration/blob/main/readme_images/results/2.png?raw=true" />
-    <p>Comparison of calibrated images.</p>
+    <img width="80%" src="https://github.com/ASASauqui/Circle-images/blob/main/readme_images/results/1.png?raw=true" />
+    <p>Result after 200 circles.</p>
 </div><br>
 
 <h2><b>Used technologies</b></h2>
@@ -89,7 +89,7 @@ Where F is a random number between 0 and 2.<br>
 Later, in the crossover, what is sought is to combine the original vector x<sub>i</sub> with the previously created v<sub>i</sub> for the emergence of another vector called u<sub>i</sub>. This combination is made interleaved from the index 0 to k, and the decision to take for u<sub>ik</sub> the x<sub>ij</sub> or the v<sub>ij</sub>, is made by means of a probability 'Cr', which in this case is 0.5.<br><br>
 
 <div align="center">
-    <img width="30%" src="https://github.com/ASASauqui/Color-calibration/blob/main/readme_images/math/1.svg?raw=true"/>
+    <img width="30%" src="https://github.com/ASASauqui/Circle-images/blob/main/readme_images/math/1.svg?raw=true"/>
 </div><br>
 
 And finally, in the selection of survivors, the best individual between xi and ui is selected for a tournament, and the one who survives will be part of the next generation.<br><br>
@@ -103,12 +103,17 @@ And finally, in the selection of survivors, the best individual between xi and u
 
 The general function of the algorithm is to add an amount 'n' of circles until completing the image and minimizing the objective function. In each iteration 'i', the differential evolution algorithm will decide which circle minimizes the objective function the most and comes closest to resembling the original image, in this way, each new circle it places will represent an improvement and, therefore, each time the created image will become more like the original. It will start from a black canvas the size of the original image, each time a new circle is added, it will become the new canvas, and so on iteratively until completing the stopping condition, which in this case is the amount ' n' of iterations.
 
+<div align="center">
+    <img width="70%" src="https://github.com/ASASauqui/Circle-images/blob/main/readme_images/methodology/2.png?raw=true" />
+    <p>Control matrix and the image to calibrate.</p>
+</div><br>
+
 <ul>
     <li>
         <b>A. Load images</b><br>
         First, the image to be represented with circles was loaded and transformed to an RGBA format, so that it has the alpha component.<br><br>
         <div align="center">
-            <img width="50%" src="https://github.com/ASASauqui/Color-calibration/blob/main/readme_images/methodology/1.png?raw=true" />
+            <img width="50%" src="https://github.com/ASASauqui/Circle-images/blob/main/readme_images/methodology/1.png?raw=true" />
             <p>Control matrix and the image to calibrate.</p>
         </div><br>
     </li>
@@ -146,4 +151,11 @@ The general function of the algorithm is to add an amount 'n' of circles until c
 </ul><br>
 
 <h2><b>Results</b></h2>
+
+After only 200 circles an image close to the target image was achieved. The algorithm could have been given more time to get a more detailed picture, but this was enough to show that the algorithm works properly. It should be noted that the algorithm was optimized so that it could go faster, since in initial versions it was too slow.
+
+<div align="center">
+    <img width="80%" src="https://github.com/ASASauqui/Circle-images/blob/main/readme_images/results/1.png?raw=true" />
+    <p>Result after 200 circles.</p>
+</div><br>
 
