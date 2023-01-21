@@ -3,8 +3,8 @@
 Circle images with differential evolutionary algorithm from scratch.<br>
 
 <div align="center">
-    <img width="80%" src="https://github.com/ASASauqui/Circle-images/blob/main/readme_images/results/1.png?raw=true" />
-    <p>Result after 200 circles.</p>
+    <img width="60%" src="https://github.com/ASASauqui/Circle-images/blob/main/readme_images/gif/1.gif?raw=true" />
+    <p>Circle process.</p>
 </div><br>
 
 <h2><b>Used technologies</b></h2>
@@ -101,11 +101,11 @@ And finally, in the selection of survivors, the best individual between xi and u
 
 <h2><b>Methodology</b></h2>
 
-The general function of the algorithm is to add an amount 'n' of circles until completing the image and minimizing the objective function. In each iteration 'i', the differential evolution algorithm will decide which circle minimizes the objective function the most and comes closest to resembling the original image, in this way, each new circle it places will represent an improvement and, therefore, each time the created image will become more like the original. It will start from a black canvas the size of the original image, each time a new circle is added, it will become the new canvas, and so on iteratively until completing the stopping condition, which in this case is the amount ' n' of iterations.
+The general function of the algorithm is to add an amount 'n' of circles until completing the image and minimizing the objective function. In each iteration 'i', the differential evolution algorithm will decide which circle minimizes the objective function the most and comes closest to resembling the original image, in this way, each new circle it places will represent an improvement and, therefore, each time the created image will become more like the original. It will start from a black canvas the size of the original image, each time a new circle is added, it will become the new canvas, and so on iteratively until completing the stopping condition, which in this case is the amount 'n' of iterations.
 
 <div align="center">
     <img width="70%" src="https://github.com/ASASauqui/Circle-images/blob/main/readme_images/methodology/2.png?raw=true" />
-    <p>Control matrix and the image to calibrate.</p>
+    <p>First 2 best circles.</p>
 </div><br>
 
 <ul>
@@ -114,7 +114,7 @@ The general function of the algorithm is to add an amount 'n' of circles until c
         First, the image to be represented with circles was loaded and transformed to an RGBA format, so that it has the alpha component.<br><br>
         <div align="center">
             <img width="50%" src="https://github.com/ASASauqui/Circle-images/blob/main/readme_images/methodology/1.png?raw=true" />
-            <p>Control matrix and the image to calibrate.</p>
+            <p>Target image.</p>
         </div><br>
     </li>
     <li>
