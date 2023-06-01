@@ -144,7 +144,7 @@ The general function of the algorithm is to add an amount 'n' of circles until c
         <b>C. Objective function</b><br>
         Given that 'P' is our array of parameters, 'X' is the image of the current canvas and 'Y' the target image (original image), we have that the objective function is:<br><br>
         <div align="center">
-            <img src="https://latex.codecogs.com/svg.latex?f(P,X,Y)=\sum_{i=1}^{n}|Y_i-Z_i|"/>
+            <img src="https://latex.codecogs.com/svg.latex?\color{white}f(P,X,Y)=\sum_{i=1}^{n}|Y_i-Z_i|"/>
         </div><br>
         Where 'Z' is the new canvas that will take the place of 'X'. This 'Z' canvas has the new circle made with the 'P' array parameters placed on the 'X' image. With this, we want to verify the difference between 'Y' and the image with the new circle and thus evaluate if there was an improvement or not.
     </li>
